@@ -300,6 +300,7 @@ a{
 .personaldetail{
     width:100%;
     height:100%;
+    overflow:hidden;
 }
 .personaldetail .header{
     position:fixed;
@@ -325,16 +326,17 @@ a{
 /*消息内容*/
 .messageContent{
     width:100%;
-    /*height:530px;*/
+    height:557px;
     padding:10px 0;
-    margin-bottom:50px;
+    /*margin-bottom:50px;*/
     /*border:1px solid transparent;*/
+    overflow-y: auto;
     position:relative;
     top:60px;
     z-index:1;
 }
 .receive-msg,.send-msg{
-    height:56px;
+    min-height:56px;
     padding: 0 15px;
     margin:20px 0;
 }
@@ -352,13 +354,16 @@ a{
 }
 .msgcont{
     display:inline-block;
-    padding:0 24px;
-    height:48px;
-    line-height:48px;
+    word-wrap: break-word;
+    padding:15px 15px;
+    /*height:48px;
+    line-height:48px;*/
+    max-width:70%;
     border-radius:5px;
     margin-top:7px;
     font-size:18px;
     color:#252525;
+
 }
 .receive-msg .receiveMsg-cont{
     background-color:#ffce78;
@@ -454,7 +459,12 @@ a{
     .content{
         margin-bottom: 80px;
     }
-
+    .msgcont{
+        max-width:60%;
+    }
+    .messageContent{
+        height:458px;
+    }
     .sendMessage .fasong-input{
         width:59%;
     }
@@ -463,6 +473,9 @@ a{
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
     .sendMessage .fasong-input{
         width:65%;
+    }
+    .messageContent{
+        height:557px;
     }
     .content{
         margin-bottom: 70px;
@@ -473,9 +486,9 @@ a{
     .content {
         margin-bottom:180px;
     }
-    /*.messageContent{
-        height:600px;
-    }*/
+    .messageContent{
+         height:625px;
+     }
     .sendMessage .fasong-input{
         width:68%;
     }
