@@ -81,8 +81,8 @@ a{
 }
 .nav span{
     display:inline-block;
-    /*margin-right:4%;*/
-    width:18%;
+    margin-right:4%;
+    /*width:18%;*/
     text-align:center;
     line-height:35px;
     height:34px;
@@ -92,7 +92,11 @@ a{
 .nav span:last-child{
     margin-right:0;
 }
-.nav span:hover{
+/*.nav span:hover{
+    color:#ff7e02;
+    border-bottom:2px solid #ff7e02;
+}*/
+.nav span.active{
     color:#ff7e02;
     border-bottom:2px solid #ff7e02;
 }
@@ -100,7 +104,9 @@ a{
 /*消息列表*/
 .content{
     width:100%;
-    margin-bottom:70px;
+    height:484px;
+    overflow-y:auto;
+    padding-bottom:10px;
     position:relative;
     left:0;
     top:95px;
@@ -326,7 +332,7 @@ a{
 /*消息内容*/
 .messageContent{
     width:100%;
-    height:557px;
+    height:530px;
     padding:10px 0;
     /*margin-bottom:50px;*/
     /*border:1px solid transparent;*/
@@ -452,12 +458,15 @@ a{
 
 /* iphone5 */
 @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+    .content{
+        height:412px;
+    }
+    .nav{
+        padding-left:1.0rem;
+    }
     .nav span{
         width:auto;
-        margin-right:0;
-    }
-    .content{
-        margin-bottom: 80px;
+        margin-right:1%;
     }
     .msgcont{
         max-width:60%;
@@ -475,16 +484,23 @@ a{
         width:65%;
     }
     .messageContent{
-        height:557px;
+        height:537px;
     }
     .content{
-        margin-bottom: 70px;
+        height:511px;
     }
 }
 /* iphone6plus */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
     .content {
-        margin-bottom:180px;
+        height:580px;
+    }
+    .nav span{
+        width:auto;
+        margin-right:6%;
+    }
+    .nav span.last{
+        margin-right:0%;
     }
     .messageContent{
          height:625px;

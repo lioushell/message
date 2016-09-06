@@ -16,7 +16,7 @@
             </div>
             <!--导航-->
             <div class="nav">
-                <span>系统通知</span>
+                <span class="active">系统通知</span>
                 <span>朋友圈</span>
                 <span>回复我的</span>
                 <span>评论我的</span>
@@ -175,6 +175,28 @@
                 <span class="msghead send-head"></span>
                 <p class="msgcont sendMsg-cont">你对微商感兴趣吗？</p>
             </div>
+
+            <!--接收方--对方-->
+            <div class="receive-msg">
+                <span class="msghead receive-head"></span>
+                <p class="msgcont receiveMsg-cont">你对微商感兴趣吗？</p>
+            </div>
+            <div class="messageDate">11:23</div>
+            <!--发送方--自己-->
+            <div class="send-msg">
+                <span class="msghead send-head"></span>
+                <p class="msgcont sendMsg-cont">你对微商感兴趣吗？</p>
+            </div>
+            <!--接收方--对方-->
+            <div class="receive-msg">
+                <span class="msghead receive-head"></span>
+                <p class="msgcont receiveMsg-cont">你对微商感兴趣吗？</p>
+            </div>
+            <!--发送方--自己-->
+            <div class="send-msg">
+                <span class="msghead send-head"></span>
+                <p class="msgcont sendMsg-cont">你对微商感兴趣吗？</p>
+            </div>
         </div>
         <!--信息发送栏-->
         <div class="sendMessage">
@@ -184,14 +206,23 @@
         </div>
     </div>
 
-    <script src="js/jquery2.1.4.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script>
+        /*列表页导航栏切换*/
+        $(".nav span").each(function(index){
+            $(this).click(function(){
+                $(".nav span").removeClass("active");
+                $(".nav span").eq(index).addClass("active");
+            });
+        });
+
         /*发送私信按钮*/
         $(".btn-send").on("touchstart", function () {
             $(".container").addClass("none");
             $(".personaldetail").removeClass("none");
         })
 
+        var str = "<div class='send-msg'><span class='msghead send-head'></span>";
         /*发送按钮*/
         $(".btn-fasong").on("touchstart", function () {
             if($(".msgInput").val()!= ""){
