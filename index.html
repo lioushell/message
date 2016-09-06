@@ -116,32 +116,32 @@
             <div class="rank-list">
                 <a href="#"><!--<img src="images/ranklist-1.png" >-->
                     <span class="ranklistImg"></span>
-                    <span>排行榜</span>
-                    <span class="msg-count none msg-count1">6</span>
+                    <i>排行榜</i>
+                    <b class="msg-count none msg-count1">6</b>
                 </a>
             </div>
             <div class="gaodi">
                 <a href="#"><!--<img src="images/gaodi-1.png" >-->
                     <span class="gaodiImg"></span>
-                    <span>高地</span>
-                    <span class="msg-count none msg-count2">6</span>
+                    <i>高地</i>
+                    <b class="msg-count none msg-count2">6</b>
                 </a>
             </div>
             <div class="zhiku">
                 <a href="#">
                     <span class="zhikuImg"></span>
                     <!--<img src="images/zhiku-1.png" >-->
-                    <span>智库</span>
-                    <span class="msg-count none msg-count3">6</span>
+                    <i>智库</i>
+                    <b class="msg-count none msg-count3">6</b>
                 </a>
             </div>
             <div class="xiaoxi">
                 <a href="#" class="">
                     <span class="xiaoxiImg"></span>
                     <!--<img src="images/xiaoxi-2.png" >-->
-                    <span>消息</span>
+                    <i>消息</i>
                     <!--消息数目-->
-                    <span class="msg-count msg-count4">6</span>
+                    <b class="msg-count msg-count4">6</b>
                 </a>
             </div>
         </footer>
@@ -208,7 +208,10 @@
 
     <script src="js/jquery2.1.4.min.js"></script>
     <script>
-        /*列表页导航栏切换*/
+        /*
+        * 列表页
+        * */
+        /*页首导航栏切换*/
         $(".nav span").each(function(index){
             $(this).click(function(){
                 $(".nav span").removeClass("active");
@@ -222,7 +225,21 @@
             $(".personaldetail").removeClass("none");
         })
 
+        /*页尾导航栏切换*/
+        $(".footer div").each(function(index){
+            $(this).click(function(){
+                $(".footer div a span").removeClass("active");
+                $(".footer div a span").eq(index).addClass("active");
+                //字体颜色
+                $(".footer div a").css("color","#666");
+                $(".footer div a").eq(index).css("color","#5e9ce7");
 
+            });
+        });
+
+        /*
+        * 私信详情页
+        * */
         /*私信详情页 返回按钮*/
         $(".detail-back").on("touchstart", function () {
             $(".container").removeClass("none");

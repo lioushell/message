@@ -210,7 +210,7 @@ a{
 .footer div.xiaoxi a{
     width:28px;
 }
-.footer div.rank-list a:hover{
+/*.footer div.rank-list a:hover{
     color:#5e9ce7;
 }
 .footer div.gaodi a:hover{
@@ -221,48 +221,52 @@ a{
 }
 .footer div.xiaoxi a:hover{
     color:#5e9ce7;
-}
+}*/
 .footer div a>span{
     display:inline-block;
     width:100%;
 }
+.footer div a>i,.footer div a>b{
+    font-weight:normal;
+    font-style: normal;
+}
 .footer div a>span.ranklistImg{
      height:23px;
-     background:url(../images/ranklist-1.png) no-repeat left top;
+     background:url(../images/nav-1.png) no-repeat left top;
      background-size:100% 100%;
  }
 .footer div a>span.gaodiImg{
     height:23px;
-    background:url(../images/gaodi-1.png) no-repeat left top;
+    background:url(../images/nav-2.png) no-repeat left top;
     background-size:100% 100%;
 }
 .footer div a>span.zhikuImg{
     height:25px;
-    background:url(../images/zhiku-1.png) no-repeat left top;
+    background:url(../images/nav-3.png) no-repeat left top;
     background-size:100% 100%;
 }
 .footer div a>span.xiaoxiImg{
     height:21px;
-    background:url(../images/xiaoxi-1.png) no-repeat left top;
+    background:url(../images/nav-4.png) no-repeat left top;
     background-size:100% 100%;
 }
-.footer div a>span.ranklistImg:hover{
-    background:url(../images/ranklist-2.png) no-repeat left top;
+.footer div a>span.ranklistImg.active{
+    background:url(../images/nav-11.png) no-repeat left top;
     background-size:100% 100%;
 }
-.footer div a>span.gaodiImg:hover{
+.footer div a>span.gaodiImg.active{
     height:23px;
-    background:url(../images/gaodi-2.png) no-repeat left top;
+    background:url(../images/nav-22.png) no-repeat left top;
     background-size:100% 100%;
 }
-.footer div a>span.zhikuImg:hover{
+.footer div a>span.zhikuImg.active{
     height:26px;
-    background:url(../images/zhiku-2.png) no-repeat left top;
+    background:url(../images/nav-33.png) no-repeat left top;
     background-size:100% 100%;
 }
-.footer div a>span.xiaoxiImg:hover{
+.footer div a>span.xiaoxiImg.active{
     height:21px;
-    background:url(../images/xiaoxi-2.png) no-repeat left top;
+    background:url(../images/nav-44.png) no-repeat left top;
     background-size:100% 100%;
 }
 .footer div a img{
