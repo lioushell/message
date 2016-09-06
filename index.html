@@ -150,7 +150,7 @@
     <!--私信详情页-->
     <div class="personaldetail none">
         <div class="header">
-            <a class="detail-back"><</a>
+            <a class="detail-back">&lt;</a>
             <span class="head-title">消息详情</span>
         </div>
         <div class="messageContent">
@@ -191,11 +191,13 @@
             $(".container").addClass("none");
             $(".personaldetail").removeClass("none");
         })
-        
+
+        var str = "<div class='send-msg'><span class='msghead send-head'></span>";
         /*发送按钮*/
         $(".btn-fasong").on("touchstart", function () {
             if($(".msgInput").val()!= ""){
-
+                var str = "<div class='send-msg'><span class='msghead send-head'></span><p class='msgcont sendMsg-cont'>"+$('.msgInput').val()+"</p></div>";
+                $(".messageContent").append(str);
             }
         })
     </script>

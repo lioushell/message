@@ -81,7 +81,8 @@ a{
 }
 .nav span{
     display:inline-block;
-    margin-right:4%;
+    /*margin-right:4%;*/
+    width:18%;
     text-align:center;
     line-height:35px;
     height:34px;
@@ -412,7 +413,7 @@ a{
 }
 .sendMessage .fasong-input{
     display: inline-block;
-    width:65%;
+    width:70%;
     height:32px;
     border-radius:5px;
     border:1px solid #c2c1c6;
@@ -447,6 +448,7 @@ a{
 /* iphone5 */
 @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
     .nav span{
+        width:auto;
         margin-right:0;
     }
     .content{
