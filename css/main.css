@@ -100,7 +100,7 @@ a{
 /*消息列表*/
 .content{
     width:100%;
-    margin-bottom:20px;
+    margin-bottom:70px;
     position:relative;
     left:0;
     top:95px;
@@ -465,7 +465,7 @@ a{
         width:65%;
     }
     .content{
-        margin-bottom: 45px;
+        margin-bottom: 70px;
     }
 }
 /* iphone6plus */
