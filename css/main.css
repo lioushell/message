@@ -1,0 +1,487 @@
+html,body{
+    width:100%;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+}
+body{
+    height:100%;
+    font-size:10px;
+    font-family: "黑体";
+    position:relative;
+    background-color:#fff;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.none{
+    display:none!important;
+}
+
+/*私信列表页*/
+.container{
+    width:100%;
+    height:100%;
+}
+.container header{
+    width:100%;
+    z-index: 1000;
+    background:#fff;
+    overflow:hidden;
+    position: fixed;
+    left:0;
+    top:0;
+}
+.header{
+    width:100%;
+    height:60px;
+    padding-top:0px;
+    position:relative;
+    background-color:#4990e2;
+}
+.header .head-logo{
+    display:block;
+    width:29px;
+    height:29px;
+    padding:1px;
+    background:#fff;
+    border-radius:50%;
+    background:url(../images/headlogo.png) no-repeat left top;
+    background-size:100% 100%;
+    position:absolute;
+    left:1.5rem;
+    top:25px;
+}
+.header .head-title{
+    width:100%;
+    height:29px;
+    color:#fff;
+    line-height:29px;
+    font-size:18px;
+    letter-spacing:5px;
+    text-align:center;
+    position:absolute;
+    left:0;
+    top:25px;
+}
+.nav{
+    padding-left:1.2rem;
+    margin:0 1px;
+    height:35px;
+    line-height:35px;
+    background-color:#fff;
+    border-bottom:1px solid #e4e4e4;
+}
+.nav span{
+    display:inline-block;
+    margin-right:4%;
+    text-align:center;
+    line-height:35px;
+    height:34px;
+    font-size:15px;
+    color:#70706e;
+}
+.nav span:last-child{
+    margin-right:0;
+}
+.nav span:hover{
+    color:#ff7e02;
+    border-bottom:2px solid #ff7e02;
+}
+
+/*消息列表*/
+.content{
+    width:100%;
+    margin-bottom:20px;
+    position:relative;
+    left:0;
+    top:95px;
+}
+/*私信*/
+.personal-message{
+    width:100%;
+}
+.order-letter{
+    font-size:15px;
+    padding:7px 15px 5px 15px;
+}
+.message-list{
+    margin:0 1px;
+    list-style-type: none;
+    border-top:1px solid #e5e5e5;
+}
+.message-list>li{
+    height:56px;
+    padding:7px 1.2rem;
+    border-bottom:1px solid #e5e5e5;
+}
+/*左侧信息*/
+.message-left{
+    padding-left:60px;
+    position:relative;
+    float:left;
+}
+/*个人头像*/
+.per-image{
+    width:50px;
+    height:50px;
+    background:url(../images/touxiang.png) no-repeat left top;
+    background-size:100% 100%;
+    border-radius:50%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.message-left .user-name{
+    font-size:15px;
+    color:#4a63c7;
+    margin-bottom:6px;
+}
+.message-left p{
+    color:#666;
+    font-size:12px;
+    margin-bottom:2px;
+}
+
+/*右侧按钮*/
+.message-right{
+    height:56px;
+    line-height:56px;
+    float:right;
+}
+.message-right a.btn-send{
+    display:inline-block;
+    width:58px;
+    height:21px;
+    color:#fff;
+    line-height:21px;
+    text-align:center;
+    background:#187adb;
+    border-radius:3px;
+    text-decoration: none;
+}
+
+.footer{
+    width:100%;
+    z-index:100;
+    padding-bottom:5px;
+    padding-left:1%;
+    padding-top:12px;
+    background-color:#fff;
+    border-top:1px solid #e7e7e7;
+    position:fixed;
+    left:0;
+    bottom:0;
+}
+.footer div{
+    display:inline-block;
+    text-align:center;
+    width:23%;
+    position:relative;
+}
+.footer div a{
+    display:inline-block;
+    position:relative;
+    color:#666;
+}
+.footer div.rank-list a{
+    width:37px;
+}
+.footer div.gaodi a{
+    width:24px;
+}
+.footer div.zhiku a{
+    width:28px;
+}
+.footer div.xiaoxi a{
+    width:28px;
+}
+.footer div.rank-list a:hover{
+    color:#5e9ce7;
+}
+.footer div.gaodi a:hover{
+    color:#5e9ce7;
+}
+.footer div.zhiku a:hover{
+    color:#5e9ce7;
+}
+.footer div.xiaoxi a:hover{
+    color:#5e9ce7;
+}
+.footer div a>span{
+    display:inline-block;
+    width:100%;
+}
+.footer div a>span.ranklistImg{
+     height:23px;
+     background:url(../images/ranklist-1.png) no-repeat left top;
+     background-size:100% 100%;
+ }
+.footer div a>span.gaodiImg{
+    height:23px;
+    background:url(../images/gaodi-1.png) no-repeat left top;
+    background-size:100% 100%;
+}
+.footer div a>span.zhikuImg{
+    height:25px;
+    background:url(../images/zhiku-1.png) no-repeat left top;
+    background-size:100% 100%;
+}
+.footer div a>span.xiaoxiImg{
+    height:21px;
+    background:url(../images/xiaoxi-1.png) no-repeat left top;
+    background-size:100% 100%;
+}
+.footer div a>span.ranklistImg:hover{
+    background:url(../images/ranklist-2.png) no-repeat left top;
+    background-size:100% 100%;
+}
+.footer div a>span.gaodiImg:hover{
+    height:23px;
+    background:url(../images/gaodi-2.png) no-repeat left top;
+    background-size:100% 100%;
+}
+.footer div a>span.zhikuImg:hover{
+    height:26px;
+    background:url(../images/zhiku-2.png) no-repeat left top;
+    background-size:100% 100%;
+}
+.footer div a>span.xiaoxiImg:hover{
+    height:21px;
+    background:url(../images/xiaoxi-2.png) no-repeat left top;
+    background-size:100% 100%;
+}
+.footer div a img{
+    display:block;
+    width:100%;
+    margin-bottom:5px;
+}
+.footer div .msg-count{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    background:#f00;
+    border-radius:50%;
+    color:#fff;
+    position:absolute;
+}
+.footer div .msg-count1{
+    left:38px;
+    top:-10px;
+}
+.footer div .msg-count2{
+    left:24px;
+    top:-6px;
+}
+.footer div .msg-count3{
+    left:28px;
+    top:-4px;
+}
+.footer div .msg-count4{
+    left:25px;
+    top:-10px;
+}
+/*活动状态*/
+.footer div a.active{
+    color:#5e9ce7;
+}
+
+
+/*私信详情页*/
+.personaldetail{
+    width:100%;
+    height:100%;
+}
+.personaldetail .header{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:1000;
+}
+.detail-back{
+    display:inline-block;
+    color:#fff;
+    width:29px;
+    height:29px;
+    font-size:24px;
+    line-height:29px;
+    text-align:center;
+    position:absolute;
+    left:0px;
+    top:25px;
+}
+.personaldetail .head-title{
+    letter-spacing: normal;
+}
+/*消息内容*/
+.messageContent{
+    width:100%;
+    /*height:530px;*/
+    padding:10px 0;
+    margin-bottom:50px;
+    /*border:1px solid transparent;*/
+    position:relative;
+    top:60px;
+    z-index:1;
+}
+.receive-msg,.send-msg{
+    height:56px;
+    padding: 0 15px;
+    margin:20px 0;
+}
+.msghead{
+    width:56px;
+    height:56px;
+    display: inline-block;
+    border-radius:50%;
+}
+.receive-msg .receive-head{
+    background:url(../images/receive-head.png) no-repeat left top;
+    background-size:100% 100%;
+    margin-right:12px;
+    float:left;
+}
+.msgcont{
+    display:inline-block;
+    padding:0 24px;
+    height:48px;
+    line-height:48px;
+    border-radius:5px;
+    margin-top:7px;
+    font-size:18px;
+    color:#252525;
+}
+.receive-msg .receiveMsg-cont{
+    background-color:#ffce78;
+    float:left;
+}
+.messageDate{
+    width:45px;
+    height:17px;
+    color:#fff;
+    font-size:12px;
+    margin:20px auto;
+    line-height:17px;
+    border-radius:10px;
+    text-align:center;
+    background-color:#d0d0d0;
+}
+/*发送方*/
+.send-msg .send-head{
+    background:url(../images/send-head.png) no-repeat left top;
+    background-size:100% 100%;
+    margin-left:12px;
+    float:right;
+}
+.send-msg .sendMsg-cont{
+    border:1px solid #cacaca;
+    float:right;
+}
+
+/*信息发送栏*/
+.sendMessage{
+    width:100%;
+    height:36px;
+    padding:7px 0;
+    border-top:1px solid #c8c8ca;
+    background-color:#fff;
+    position:fixed;
+    left:0;
+    bottom:0;
+    z-index:1000;
+}
+.sendMessage .showface{
+    display: inline-block;
+    width:29px;
+    height:29px;
+    border-radius:50%;
+    background:url(../images/biaoqing.png) no-repeat left top;
+    background-size:100% 100%;
+    background-color:#fff;
+    margin-left:6px;
+    float:left;
+    z-index:1000;
+}
+.sendMessage .fasong-input{
+    display: inline-block;
+    width:70%;
+    height:32px;
+    border-radius:5px;
+    border:1px solid #c2c1c6;
+    margin:0 7px;
+    float:left;
+}
+.sendMessage .fasong-input input{
+    border:none;
+    outline:none;
+    border-radius:5px;
+    padding-left:8px;
+    width:95%;
+    height:30px;
+}
+.sendMessage .btn-fasong{
+    display:inline-block;
+    background-color:#4990e2;
+    text-align:center;
+    border-radius:5px;
+    margin-right:7px;
+    margin-left:3px;
+    float:right;
+    width:68px;
+    height:36px;
+    font-size:18px;
+    color:#fff;
+    line-height:36px;
+}
+
+/*多媒体适配*/
+
+/* iphone5 */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+    .nav span{
+        margin-right:0;
+    }
+    .content{
+        margin-bottom: 80px;
+    }
+
+    .sendMessage .fasong-input{
+        width:59%;
+    }
+}
+/*iphone6*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+    .sendMessage .fasong-input{
+        width:65%;
+    }
+    .content{
+        margin-bottom: 45px;
+    }
+}
+/* iphone6plus */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+    .content {
+        margin-bottom:180px;
+    }
+    /*.messageContent{
+        height:600px;
+    }*/
+    .sendMessage .fasong-input{
+        width:68%;
+    }
+}
+
+/*  Galaxy S5 landscape & portrait*/
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3) {
+    .sendMessage .fasong-input{
+        width:64%;
+    }
+}
