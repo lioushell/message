@@ -3,7 +3,7 @@
  */
 
 
-$(function () {
+/*$(function () {
     //console.log($(".container").innerWidth());
     //获取列表页 内容区域的高度
     var contentheight = parseInt($(".container").innerHeight()-($("header").height()+$("footer").innerHeight()));
@@ -15,13 +15,13 @@ $(function () {
     //设置聊天发送框的宽度
     $(".fasong-input").width(window.outerWidth-($(".showface").width()+$(".btn-fasong").width()+32));
     //设置信息显示框的宽度
-    /*var maxWidth = window.outerWidth-($(".msghead").width()+12+30);
+    /!*var maxWidth = window.outerWidth-($(".msghead").width()+12+30);
     if($(".msgcont").width() >= maxWidth){
         $(".msgcont").width(maxWidth);
-    }*/
-    /*$(".msgcont").maxWidth = maxWidth;*/
+    }*!/
+    /!*$(".msgcont").maxWidth = maxWidth;*!/
     //console.log($(".msgcont").width());
-})
+})*/
 
 /*
  * 列表页
