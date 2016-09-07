@@ -358,6 +358,7 @@ a{
     min-height:56px;
     padding: 0 15px;
     margin:20px 0;
+    overflow:hidden;
 }
 .msghead{
     width:56px;
@@ -377,7 +378,7 @@ a{
     padding:15px 15px;
     /*height:48px;
     line-height:48px;*/
-    max-width:68%;
+    max-width:66%;
     border-radius:5px;
     margin-top:7px;
     font-size:18px;
