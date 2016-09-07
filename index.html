@@ -210,16 +210,19 @@
     <script>
 
         $(function () {
-            console.log($(".container").innerHeight());
+            console.log($(".container").innerWidth());
             //获取列表页 内容区域的高度
-            var inheight = parseInt($(".container").innerHeight()-($("header").height()+$("footer").innerHeight()));
-            $(".content").height(inheight)
-            console.log($(".content").height());
-            console.log(window.innerHeight);
+            var contentheight = parseInt($(".container").innerHeight()-($("header").height()+$("footer").innerHeight()));
+            $(".content").height(contentheight)
 
             //获取留言列表页 聊天框的高度
-            $(".messageContent").height(window.innerHeight-($(".header").height()+$(".sendMessage").innerHeight()));
-            console.log($(".messageContent").height());
+            var msgcontentHeight = window.innerHeight-($(".header").height()+$(".sendMessage").innerHeight());
+            $(".messageContent").height(msgcontentHeight);
+            //设置聊天发送框的宽度
+            $(".fasong-input").width(window.outerWidth-($(".showface").width()+$(".btn-fasong").width()+32));
+            console.log($(".showface").width()+6);
+            console.log($(".btn-fasong").width()+10);
+            console.log($(".fasong-input").width());
         })
 
         /*
