@@ -491,15 +491,15 @@ a{
     .sendMessage .fasong-input{
         width:59%;
     }
+    .sendMessage .fasong-input input{
+        width:94%;
+        height:28px;
+    }
 }
 /*iphone6*/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
     .sendMessage .fasong-input{
         width:65%;
-    }
-    .sendMessage .fasong-input input{
-        width:94%;
-        height:28px;
     }
     .messageContent{
         height:537px;
